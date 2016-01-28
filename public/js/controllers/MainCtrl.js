@@ -27,7 +27,8 @@ angular.module('MainCtrl', ['firebase']).controller('MainController', function($
     $scope.editProduct = function (product) {
       console.log("index", product);
       list.$save(product).then(function(ref) {
-        ref.key() === product.$id; // true
+        ref.key() === product.$id;
+        $scope.edit = false // true
       });
     };	
 
