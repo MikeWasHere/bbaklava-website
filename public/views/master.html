@@ -1,0 +1,24 @@
+<div ng-app="MainCtrl" ng-controller="MainController">
+
+<form ng-submit="addProduct()">
+	<input type="text" ng-model="product.name" placeholder="Title goes here">
+	<input type="text" ng-model="product.description" placeholder="Short Description">
+	<input type="text" ng-model="product.price" placeholder="Whats the price?">
+	<button type="submit" class="success">Add Product</button>
+</form>
+
+<form ng-submit="editProduct(updateProduct)" ng-show="edit">
+	<input type="text" ng-model="updateProduct.name" >
+	<input type="text" ng-model="updateProduct.description" >
+	<input type="text" ng-model="updateProduct.price" >
+	<button type="submit" class="success">Update Production</button>
+</form>
+
+	<div ng-repeat="product in items">
+		<h3>{{product.name}}</h3>
+		<h4>{{product.description}}</h4>
+		<h3>{{product.price | currency}}</h3>
+		<button ng-click="$parent.updateProduct=product; $parent.edit=true;">Edit</button>
+		<button ng-click="removeProduct($index)" class="alert">Delete</button>
+	</div>
+</div>
