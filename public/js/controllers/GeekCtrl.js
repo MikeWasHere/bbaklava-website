@@ -4,6 +4,11 @@ angular.module('GeekCtrl', []).controller('GeekController', function($scope,$fir
 
 	console.log("Loading the controller correctly");	
 
+	var URL = "https://bbaklava.firebaseio.com/";
+    var list = $firebaseArray(new Firebase(URL));
+    $scope.items = list;
+    console.log("Firebase Data", $scope.items);
+
 	$scope.baklavas = [
 	{
 		name: 'Baklava with Walnuts',

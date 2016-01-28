@@ -238,6 +238,19 @@ section {
 	font-size: 1.5em;
 }
 
+#submit {
+	float: right;
+	background-color: #C0392B;
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 700;
+	font-size: 1.5em;
+}
+
+#submit:hover {
+	background-color: #962A24;
+}
+
 iframe {
 	float: right;
 	width: 45%;
