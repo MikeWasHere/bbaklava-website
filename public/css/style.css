@@ -256,3 +256,29 @@ iframe {
 	width: 45%;
 	margin-top: 5%;
 }
+
+/* MASTER PAGE */
+.masterBody {
+	width: 80%;
+	display: block;
+	position: absolute;
+	left: 10%;
+	top: -10%;
+}
+
+form {
+	margin-bottom: 5%; 
+}
+
+.activeProducts {
+	background-color: #E2E2E2;
+	margin-bottom: 2%;
+}
+
+.activeProducts h3 {
+	text-align: left;
+}
+
+.activeProducts h4 {
+	text-align: left;
+}

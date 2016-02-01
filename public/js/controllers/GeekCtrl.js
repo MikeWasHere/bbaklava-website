@@ -9,52 +9,52 @@ angular.module('GeekCtrl', []).controller('GeekController', function($scope,$fir
     $scope.items = list;
     console.log("Firebase Data", $scope.items);
 
-	$scope.baklavas = [
-	{
-		name: 'Baklava with Walnuts',
-		price: 5.00,
-		description: 'Comes with 4 Pieces',
-		canPurchase: true,
-		images: [{
-			full: '',
-			thumb: 'http://i.imgur.com/EzXGl0J.jpg'
-		},
-		]
-	},
-	{
-		name: 'Baklava with Almonds',
-		price: 5.00,
-		description: 'Comes with 4 Pieces',
-		canPurchase: true,
-		images: [{
-			full: '',
-			thumb: 'http://i.imgur.com/L6sqa9b.jpg'
-		},
-		]
-	},
-	{
-		name: 'Baklava with Pastachio',
-		price: 5.00,
-		description: 'Comes with 4 Pieces',
-		canPurchase: true,
-		images: [{
-			full: '',
-			thumb: 'http://i.imgur.com/Rpcm2zs.jpg'
-		},
-		]
-	},
-	{
-		name: 'Baklava with Pastachio',
-		price: 5.00,
-		description: 'Comes with 4 Pieces',
-		canPurchase: true,
-		images: [{
-			full: '',
-			thumb: 'http://i.imgur.com/Rpcm2zs.jpg'
-		},
-		]
-	}
-	]
+	// $scope.baklavas = [
+	// {
+	// 	name: 'Baklava with Walnuts',
+	// 	price: 5.00,
+	// 	description: 'Comes with 4 Pieces',
+	// 	canPurchase: true,
+	// 	images: [{
+	// 		full: '',
+	// 		thumb: 'http://i.imgur.com/EzXGl0J.jpg'
+	// 	},
+	// 	]
+	// },
+	// {
+	// 	name: 'Baklava with Almonds',
+	// 	price: 5.00,
+	// 	description: 'Comes with 4 Pieces',
+	// 	canPurchase: true,
+	// 	images: [{
+	// 		full: '',
+	// 		thumb: 'http://i.imgur.com/L6sqa9b.jpg'
+	// 	},
+	// 	]
+	// },
+	// {
+	// 	name: 'Baklava with Pastachio',
+	// 	price: 5.00,
+	// 	description: 'Comes with 4 Pieces',
+	// 	canPurchase: true,
+	// 	images: [{
+	// 		full: '',
+	// 		thumb: 'http://i.imgur.com/Rpcm2zs.jpg'
+	// 	},
+	// 	]
+	// },
+	// {
+	// 	name: 'Baklava with Pastachio',
+	// 	price: 5.00,
+	// 	description: 'Comes with 4 Pieces',
+	// 	canPurchase: true,
+	// 	images: [{
+	// 		full: '',
+	// 		thumb: 'http://i.imgur.com/Rpcm2zs.jpg'
+	// 	},
+	// 	]
+	// }
+	// ]
 
 	// var list = $firebaseArray(new Firebase("https://bbaklava.firebaseio.com/"));
 	// console.log($scope.baklavas.length)
